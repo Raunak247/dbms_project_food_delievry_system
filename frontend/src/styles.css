@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f6f7fb 0%, #eef3ff 100%);
+  color: #1f2937;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.topbar {
+  padding: 1rem;
+  background: #0f766e;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.topbar a,
+.topbar button {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.auth-card,
+.panel,
+.order-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+}
+
+button {
+  border: none;
+  background: #0f766e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  cursor: pointer;
+}
+
+.content-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.list-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.list-btn.active {
+  background: #0f766e;
+  color: #fff;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.menu-row p {
+  margin: 0.35rem 0 0;
+  color: #6b7280;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qty-box button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.switch-link {
+  color: #0f766e;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0;
+}
+
+.message {
+  margin: 0;
+  color: #b91c1c;
+}
+
+@media (min-width: 800px) {
+  .content-grid {
+    grid-template-columns: 320px 1fr;
+  }
+
+  main {
+    padding: 1.25rem 2rem;
+  }
+}
